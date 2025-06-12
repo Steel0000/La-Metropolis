@@ -423,3 +423,180 @@ video {
     text-align: center;
   }
 }
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .img2 {
+    width: 180px;
+    margin: 10px 50px 5px 15px;
+  }
+
+  .abrirMenu {
+    margin-left: 50px;
+  }
+
+  .primerParte {
+    padding: 60px 40px;
+    background-size: cover;
+  }
+
+  .eslogan {
+    font-size: 48px;
+  }
+
+  .texto1 {
+    font-size: 18px;
+    padding: 20px;
+  }
+
+  .vid {
+    padding: 40px;
+  }
+
+  .videoHistoria {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .historia {
+    padding-top: 60px;
+  }
+
+  .historia h2 {
+    padding-left: 40px;
+    font-size: 36px;
+  }
+
+  .historia p {
+    font-size: 18px;
+    padding: 20px;
+  }
+
+  .titulo {
+    font-size: 48px;
+    padding: 40px 50px;
+  }
+
+  .caja, .caja2 {
+    align-items: center;
+    gap: 30px;
+  }
+
+  .caja img, .caja2 img {
+    width: 250px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+  }
+
+  .caja h2, .caja2 h2 {
+    font-size: 40px;
+    margin-top: 100px;
+  }
+
+  .caja span, .caja2 span {
+    font-size: 25px;
+  }
+
+  .precio, .precio2 {
+    width: 320px;
+    height: 320px;
+    margin: 80px 100px;
+  }
+
+  .contacto {
+    padding: 20px 60px;
+  }
+
+  .pie {
+    height: auto;
+    min-height: 150px;
+  }
+}
+
+
+@media (min-width: 1025px) and (max-width: 1366px) {
+  .img2 {
+    width: 200px;
+    margin: 10px 100px 5px 15px;
+  }
+
+  .abrirMenu {
+    margin-left: 80px;
+  }
+
+  .primerParte {
+    padding: 70px 60px;
+  }
+
+  .eslogan {
+    font-size: 52px;
+  }
+
+  .vid {
+    padding: 50px;
+  }
+
+  .historia h2 {
+    padding-left: 60px;
+    font-size: 38px;
+  }
+
+  .titulo {
+    font-size: 52px;
+    padding: 45px 100px;
+  }
+
+  .caja img, .caja2 img {
+    width: 280px;
+    margin-left: 150px;
+    margin-bottom: 150px;
+  }
+
+  .caja h2, .caja2 h2 {
+    font-size: 45px;
+    margin-top: 120px;
+  }
+
+  .caja span, .caja2 span {
+    font-size: 28px;
+  }
+
+  .precio, .precio2 {
+    width: 350px;
+    height: 350px;
+    margin: 90px 150px;
+  }
+
+  .contacto {
+    padding: 20px 80px;
+  }
+}
+
+
+@media (min-width: 1367px) and (max-width: 1440px) {
+  .primerParte {
+    padding: 75px 70px;
+  }
+
+  .eslogan {
+    font-size: 56px;
+  }
+
+  .historia h2 {
+    padding-left: 80px;
+  }
+
+  .titulo {
+    font-size: 56px;
+    padding: 48px 150px;
+  }
+
+  .caja img, .caja2 img {
+    margin-left: 180px;
+  }
+
+  .precio, .precio2 {
+    margin: 95px 180px;
+  }
+}
