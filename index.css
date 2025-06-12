@@ -121,6 +121,7 @@ header{
 .texto1 {
     display: block;
     color: white;
+    background-color: black;
     font-family: sans-serif;
     font-size: 20px;
     padding: 30px;
