@@ -104,7 +104,7 @@ header{
 
 .primerParte {
     padding: 80px;
-    background: url(/img/fondo-primera-parte.jpg) 90%;
+    background: url(img/fondo-primera-parte.jpg) 90%;
     height: 90%;
 }
 
@@ -192,14 +192,14 @@ video {
     padding: 50px 200px;
     font-size: 60px;
     color: rgb(255, 255, 255);
-    background: url(/img/fondo-primera-parte.jpg);
+    background: url(img/fondo-primera-parte.jpg);
 }
 
 .mapa {
     display: flex;
     justify-content: center;
     padding-top: 20px;
-    background: url(/img/fondo-primera-parte.jpg);
+    background: url(img/fondo-primera-parte.jpg);
 }
 
 .indicaciones {
@@ -222,7 +222,7 @@ video {
 }
 
 .menu {
-    background: url(/img/fondo-primera-parte.jpg);
+    background: url(img/fondo-primera-parte.jpg);
 }
 
 .caja {
