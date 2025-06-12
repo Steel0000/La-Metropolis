@@ -4,7 +4,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: url("/img/fondo-primera-parte.jpg") no-repeat center center fixed;
+    background: url("img/fondo-primera-parte.jpg") no-repeat center center fixed;
     background-size: cover;
     display: flex;
     justify-content: center;
