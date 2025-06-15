@@ -1,16 +1,29 @@
-*{
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
+
+html, body {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
 body {
-    font-family: 'Poppins', sans-serif;
     background: url("img/fondo-primera-parte.jpg") no-repeat center center fixed;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+    flex-direction: column;
+    padding: 5vh 1rem;
+    min-height: 100vh;
 }
+
+
+
 .cajaInicio {
     background-color: #fff;
     padding: 2rem 2.5rem;
@@ -115,400 +128,163 @@ body {
   background-color: #d5d5d5;
 }
 
-/* =============================================== */
-/* MEDIA QUERIES RESPONSIVE */
-/* =============================================== */
-
-/* PORTÁTILES PEQUEÑOS (1024px - 1366px) */
 @media (max-width: 1366px) {
-    .cajaInicio {
-        max-width: 420px;
-        padding: 2.2rem 2.8rem;
+    .img2 {
+        margin: 10px 80px 5px 15px;
+        width: 200px;
     }
-    
-    .cajaInicio h2 {
-        font-size: 1.8rem;
-        margin-bottom: 1.6rem;
+    .abrirMenu {
+        margin-left: 80px;
     }
-    
-    .inputGrupo input {
-        padding: 0.7rem;
-        font-size: 1rem;
+    .eslogan {
+        font-size: 50px;
     }
-    
-    .loginBtn {
-        padding: 0.9rem;
-        font-size: 1.1rem;
+    .titulo {
+        padding: 40px 150px;
+        font-size: 50px;
+    }
+    .precio, .precio2 {
+        width: 350px;
+        height: 350px;
+        margin: 80px 150px;
     }
 }
 
 @media (max-width: 1024px) {
-    body {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .img1, .img2 {
+        margin: 10px auto;
+    }
+    .img2 {
+        width: 160px;
+    }
+    .abrirMenu {
+        margin: 20px auto;
+    }
+    .primerParte {
+        padding: 40px 30px;
+        text-align: center;
+    }
+    .eslogan {
+        font-size: 40px;
+    }
+    .texto1 {
+        font-size: 16px;
         padding: 20px;
     }
-    
-    .cajaInicio {
-        max-width: 400px;
-        padding: 2rem 2.5rem;
+    .videoHistoria {
+        flex-direction: column;
+        align-items: center;
     }
-    
-    .cajaInicio h2 {
-        font-size: 1.7rem;
-        margin-bottom: 1.5rem;
+    video {
+        width: 100%;
+        max-width: 500px;
     }
-    
-    .inputGrupo {
-        margin-bottom: 1.1rem;
+    .historia {
+        padding-top: 20px;
+        text-align: center;
     }
-    
-    .inputGrupo input {
-        padding: 0.65rem;
-        font-size: 0.95rem;
+    .titulo {
+        font-size: 40px;
+        padding: 30px 50px;
     }
-    
-    .opciones {
-        font-size: 0.85rem;
-        margin-bottom: 1.3rem;
-    }
-    
-    .loginBtn {
-        padding: 0.85rem;
-        font-size: 1rem;
-    }
-    
-    .registrarse {
-        font-size: 0.85rem;
-        margin-top: 1.4rem;
+    .precio, .precio2 {
+        width: 300px;
+        height: 300px;
+        margin: 50px auto;
     }
 }
 
-/* TABLETS (768px - 1023px) */
-@media (max-width: 1023px) {
-    body {
-        padding: 15px;
-        min-height: 100vh;
-    }
-    
-    .cajaInicio {
-        max-width: 380px;
-        padding: 1.8rem 2.2rem;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-    }
-    
-    .cajaInicio h2 {
-        font-size: 1.6rem;
-        margin-bottom: 1.4rem;
-        font-weight: 600;
-    }
-    
-    .inputGrupo {
-        margin-bottom: 1rem;
-    }
-    
-    .inputGrupo label {
-        margin-bottom: 0.5rem;
-        font-size: 0.9rem;
-    }
-    
-    .inputGrupo input {
-        padding: 0.6rem;
-        font-size: 0.9rem;
-        border-radius: 6px;
-    }
-    
-    .opciones {
-        font-size: 0.8rem;
-        margin-bottom: 1.2rem;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-    }
-    
-    .opciones input[type="checkbox"] {
-        width: 14px;
-        height: 14px;
-    }
-    
-    .loginBtn {
-        padding: 0.8rem;
-        font-size: 0.95rem;
-        border-radius: 8px;
-    }
-    
-    .registrarse {
-        font-size: 0.8rem;
-        margin-top: 1.3rem;
-    }
-    
-    .volverInicio {
-        padding: 0.7rem 1rem;
-        font-size: 0.9rem;
-        margin-top: 0.8rem;
-    }
-}
 
-/* CELULARES GRANDES (481px - 767px) */
 @media (max-width: 767px) {
     body {
-        padding: 10px;
         align-items: flex-start;
         padding-top: 5vh;
-        background-attachment: scroll;
     }
-    
-    .cajaInicio {
-        max-width: 350px;
-        width: 95%;
-        padding: 1.5rem 2rem;
-        margin: 0 auto;
-        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-        border-radius: 12px;
+
+    .img1, .img2 {
+        width: 100px;
+        height: 50px;
+        margin: 10px auto;
     }
-    
-    .cajaInicio h2 {
-        font-size: 1.4rem;
-        margin-bottom: 1.2rem;
-        font-weight: 600;
+    .abrirMenu {
+        font-size: 2rem;
+        margin: 10px auto;
     }
-    
-    .inputGrupo {
-        margin-bottom: 0.9rem;
+    .navList li a {
+        font-size: 20px;
+        margin: 15px;
     }
-    
-    .inputGrupo label {
-        margin-bottom: 0.4rem;
-        font-size: 0.85rem;
-        font-weight: 500;
+    .primerParte {
+        padding: 20px;
+        text-align: center;
     }
-    
-    .inputGrupo input {
-        padding: 0.55rem;
-        font-size: 0.85rem;
-        border-radius: 6px;
+    .eslogan {
+        font-size: 28px;
     }
-    
-    .opciones {
-        font-size: 0.75rem;
-        margin-bottom: 1rem;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
+    .texto1 {
+        font-size: 14px;
+        padding: 12px;
     }
-    
-    .opciones > div {
-        display: flex;
-        align-items: center;
+    video {
         width: 100%;
+        border-radius: 20px;
     }
-    
-    .opciones input[type="checkbox"] {
-        width: 14px;
-        height: 14px;
-        margin-right: 0.5rem;
+    .historia h2 {
+        font-size: 22px;
+        padding: 15px;
     }
-    
-    .loginBtn {
-        padding: 0.7rem;
-        font-size: 0.9rem;
-        border-radius: 8px;
-        font-weight: 500;
-        min-height: 44px;
+    .historia p {
+        font-size: 14px;
+        padding: 15px;
     }
-    
-    .registrarse {
-        font-size: 0.75rem;
-        margin-top: 1.2rem;
+    .titulo {
+        font-size: 24px;
+        padding: 20px;
     }
-    
-    .volverInicio {
-        padding: 0.65rem 1rem;
-        font-size: 0.85rem;
-        margin-top: 0.8rem;
-        border-radius: 6px;
-        min-height: 44px;
+    .caja, .caja2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .precio, .precio2 {
+        width: 250px;
+        height: 250px;
+        margin: 15px auto;
+    }
+    .pie {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    .contacto span {
+        font-size: 16px;
+        margin: 5px 0;
+    }
+    .derechos {
+        font-size: 14px;
+        margin-top: 10px;
     }
 }
 
-/* CELULARES PEQUEÑOS (hasta 480px) */
+
 @media (max-width: 480px) {
-    body {
-        padding: 8px;
-        align-items: flex-start;
-        padding-top: 3vh;
-        background-attachment: scroll;
+    .abrirMenu {
+        font-size: 1.8rem;
+        width: 25px;
+        height: 25px;
     }
-    
-    .cajaInicio {
-        max-width: 320px;
-        width: 98%;
-        padding: 1.2rem 1.5rem;
-        margin: 0 auto;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
-        border-radius: 10px;
+    .titulo {
+        font-size: 20px;
+        padding: 15px 10px;
     }
-    
-    .cajaInicio h2 {
-        font-size: 1.2rem;
-        margin-bottom: 1rem;
-        font-weight: 600;
+    .precio, .precio2 {
+        width: 200px;
+        height: 200px;
     }
-    
-    .inputGrupo {
-        margin-bottom: 0.8rem;
-    }
-    
-    .inputGrupo label {
-        margin-bottom: 0.3rem;
-        font-size: 0.8rem;
-        font-weight: 500;
-    }
-    
-    .inputGrupo input {
-        padding: 0.5rem;
-        font-size: 0.8rem;
-        border-radius: 5px;
-        border: 1px solid #ddd;
-    }
-    
-    .inputGrupo input:focus {
-        box-shadow: 0 0 3px rgba(74, 144, 226, 0.4);
-    }
-    
-    .opciones {
-        font-size: 0.7rem;
-        margin-bottom: 0.9rem;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.4rem;
-    }
-    
-    .opciones > div {
-        display: flex;
-        align-items: center;
-        width: 100%;
-    }
-    
-    .opciones input[type="checkbox"] {
-        width: 16px;
-        height: 16px;
-        margin-right: 0.4rem;
-    }
-    
-    .opciones a {
-        padding: 2px;
-        min-height: 20px;
-        display: inline-block;
-    }
-    
-    .loginBtn {
-        padding: 0.65rem;
-        font-size: 0.85rem;
-        border-radius: 6px;
-        font-weight: 500;
-        min-height: 44px;
-    }
-    
-    .registrarse {
-        font-size: 0.7rem;
-        margin-top: 1rem;
-    }
-    
-    .volverInicio {
-        padding: 0.6rem 0.8rem;
-        font-size: 0.8rem;
-        margin-top: 0.7rem;
-        border-radius: 5px;
-        min-height: 44px;
-    }
-}
-
-/* CELULARES MUY PEQUEÑOS (hasta 320px) */
-@media (max-width: 320px) {
-    body {
-        padding: 5px;
-        padding-top: 2vh;
-    }
-    
-    .cajaInicio {
-        max-width: 280px;
-        width: 99%;
-        padding: 1rem 1.2rem;
-        border-radius: 8px;
-    }
-    
-    .cajaInicio h2 {
-        font-size: 1.1rem;
-        margin-bottom: 0.8rem;
-    }
-    
-    .inputGrupo {
-        margin-bottom: 0.7rem;
-    }
-    
-    .inputGrupo label {
-        font-size: 0.75rem;
-        margin-bottom: 0.2rem;
-    }
-    
-    .inputGrupo input {
-        padding: 0.45rem;
-        font-size: 0.75rem;
-    }
-    
-    .opciones {
-        font-size: 0.65rem;
-        margin-bottom: 0.8rem;
-        gap: 0.3rem;
-    }
-    
-    .opciones input[type="checkbox"] {
-        width: 14px;
-        height: 14px;
-        margin-right: 0.3rem;
-    }
-    
-    .loginBtn {
-        padding: 0.6rem;
-        font-size: 0.8rem;
-        border-radius: 5px;
-    }
-    
-    .registrarse {
-        font-size: 0.65rem;
-        margin-top: 0.8rem;
-    }
-    
-    .volverInicio {
-        padding: 0.55rem 0.7rem;
-        font-size: 0.75rem;
-        margin-top: 0.6rem;
-    }
-}
-
-/* ORIENTACIÓN HORIZONTAL EN MÓVILES */
-@media (max-width: 768px) and (orientation: landscape) {
-    body {
-        align-items: center;
-        padding-top: 2vh;
-    }
-    
-    .cajaInicio {
-        max-height: 90vh;
-        overflow-y: auto;
-    }
-    
-    .cajaInicio h2 {
-        margin-bottom: 0.8rem;
-    }
-    
-    .inputGrupo {
-        margin-bottom: 0.6rem;
-    }
-    
-    .registrarse {
-        margin-top: 0.8rem;
-    }
-    
-    .volverInicio {
-        margin-top: 0.5rem;
+    .eslogan {
+        font-size: 24px;
     }
 }
